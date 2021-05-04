@@ -1,0 +1,14 @@
+Download Putty and install it on your PC
+Get the IP address of the Raspberry PI
+Make sure the port number is set at 22
+
+******************************************
+Input the IP address of the Raspberry Pi and click next
+Default login name and password is (pi and raspberry)
+If connection is successful, Great you are in the Raspberry Pi wirelessly
+
+*****************************************
+Run the following basic python codes  in the Putty to update the Raspberry Pi
+
+sudo apt-get update
+sudo apt-get upgrade

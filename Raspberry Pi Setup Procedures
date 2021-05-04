@@ -10,11 +10,22 @@ Unzip Raspberry Pi OS onto new folder on your PC
 Run SD card formatter to format the SD card by connecting it to your PC
 Run Raspberry Pi Imager to flash the OS onto the SD card
 
- ******VERY IMPORTANT STEP******ENABLING SSH
+ ******VERY IMPORTANT STEP******ENABLING SSH*******************
 Before loading the image file to the SD card using the Raspberry Pi Imager v1.6
 Launch the Raspberry Pi Imager v1.6
 Press Ctrl + Shift + X  to open advanced options menu for the Raspberry Pi Imager v1.6
 The options will come and you can scroll down to configure everything (ssh , raspberry pi name, WIFI name and password etc).
 After successful configuration, save settings and load the image file onto the SD card.
+
+********IF THE ABOVE ENABLING SSH DID NOT WORK*************
+After successful loading of the OS
+Connect the Raspberry Pi to a monitor via HDMI cable that comes with the Raspberry Pi or any available HDMI
+Follow the screen setup
+***Make sure you have router with internet connection***
+Input your WIFI password in the Raspberry PI, if your WIFI is password protected
+After sucessfully done
+Click on Raspberry Pi icon from the left side of the monitor
+Select preferences and enable the SSH from there!!!!!!!!!
+
 
 THANKS!!!!!!!!!!!!!

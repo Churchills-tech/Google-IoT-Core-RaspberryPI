@@ -12,3 +12,5 @@ Run the following basic python codes  in the Putty to update the Raspberry Pi
 
 sudo apt-get update
 sudo apt-get upgrade
+
+************REMEMBER ANY CODE ABOUT RASPBERRY PI SHOULD BE RUNNED IN PUTTY!!!***************VERY IMPORTANT!!!!!!!!

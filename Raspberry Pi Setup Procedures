@@ -19,6 +19,7 @@ After successful configuration, save settings and load the image file onto the S
 
 ********IF THE ABOVE ENABLING SSH DID NOT WORK*************
 After successful loading of the OS
+Connect the Raspberry Pi to power source
 Connect the Raspberry Pi to a monitor via HDMI cable that comes with the Raspberry Pi or any available HDMI
 Follow the screen setup
 ***Make sure you have router with internet connection***
@@ -26,6 +27,8 @@ Input your WIFI password in the Raspberry PI, if your WIFI is password protected
 After sucessfully done
 Click on Raspberry Pi icon from the left side of the monitor
 Select preferences and enable the SSH from there!!!!!!!!!
+
+****MAKE SURE THE RASPBERRY PI IS CONNECTED TO POWER AND WIFI WHILE USING THE CODES IN PUTTY*********************
 
 
 THANKS!!!!!!!!!!!!!

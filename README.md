@@ -9,8 +9,6 @@ Here are some ideas to get you started:
 - 🌱 I’m currently learning on Using IoT Core to Stream Heart Rate Data.
 - 👯 I’m looking to collaborate on everything cloud computing.
 - 🤔 I’m ready to assit anyone and share ideas on IT stuff.
-- 💬 Ask me about ...
 - 📫 How to reach me: twitter @chillkobby
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- ⚡ Fun fact!!!!!!!!!!!!!
 -->

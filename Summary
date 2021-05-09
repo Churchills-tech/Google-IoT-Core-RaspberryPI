@@ -1,0 +1,17 @@
+Connecting the sensor on the Raspberry Pi motherboard ports
+
+Red cable connects to port 1 (3v3 power)
+
+Brown cable connects to port 3 (GPI02 SDA)
+
+After the cables connected properly and the right commands sent to Raspberry Pi through Putty
+
+The sensor generates data which is recorded into IoT Core.
+
+*********Major takeaways***************
+
+If the sensor cables are not fixed appropriately to the designated port number on the Raspberry Pi motherboard, data cannot be generated. 
+
+Lastly, if the public key and the primary key are not generated using the appropriate method, 
+
+The Raspberry Pi device will not be able to communicate with the IoT Core successfully.

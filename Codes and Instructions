@@ -81,3 +81,5 @@ Return to the terminal window for your VM. Run the simulation script, but replac
   python heartrateSimulator.py --project_id=myproject --registry_id=myregistry --device_id=myVM --private_key_file=../.ssh/ec_private.pem
   
 You should see the data being sent via MQTT from your VM terminal.
+
+If you receive an error message, the most common mistake is to omit the two "–" in front of one of the parameters in the command above.

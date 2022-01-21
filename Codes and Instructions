@@ -1,0 +1,83 @@
+Install the necessary software
+Make sure that all the software on the Raspberry Pi is up to date and that needed packages are installed
+
+
+  sudo apt-get update
+  sudo apt-get install git
+  
+  Clone the project code for the heart rate receiver
+
+
+  git clone https://github.com/googlecodelabs/iotcore-heartrate
+  cd iotcore-heartrate
+  
+  
+Make sure the required core packages are all installed
+
+
+  chmod +x initialsoftware.sh
+  ./initialsoftware.sh
+  
+  
+Create a security certificate
+In order to communicate with Google Cloud, a security certificate must be generated and then registered with IoT core.
+
+  chmod +x generate_keys.sh
+  ./generate_keys.sh
+  
+  Data streaming from a Raspberry Pi
+If you constructed a Raspberry Pi IoT heart rate sensor, put on the heart rate strap and then start the script that will receive the heartbeat signals, calculate heart rate in beats per minute and push the data to Google Cloud.
+
+The distance between the heart rate strap and the receiver/Raspberry Pi needs to be within a few feet in order for the receiver to pick up heart beat signals.
+
+If you aren't in the /home/pi/iotcore-heartrate directory on the Raspberry Pi, move there first
+
+
+  cd /home/pi/iotcore-heartrate
+Start the heart rate script by changing the following to match your project, registry and device
+
+
+  python checkHeartRate.py --project_id=myproject --registry_id=myregistry --device_id=mydevice
+You should see the terminal window echo the heart rate data results about every 10 seconds. With data flowing, you can skip to the next section (Check that Data is Flowing).
+
+If you want the script to auto-start after the Raspberry Pi boots up, you will want to also add the following to .profile after the export statement:
+
+python /home/pi/iotcore-heartrate/checkHeartRate.py –project_id=myproject –registry_id=myregistry –device_id=mydevice &
+
+Install the necessary software
+Make sure that all the software on VM is up to date and that needed packages are installed
+
+
+  sudo apt-get update
+  sudo apt-get install git
+Clone the project code for the heart rate receiver which contains the script to simulate heart rate use along with the sample data
+
+
+  git clone https://github.com/googlecodelabs/iotcore-heartrate
+  cd iotcore-heartrate
+Make sure the required core packages are all installed
+
+
+  chmod +x initialsoftware.sh
+  ./initialsoftware.sh
+Create a security certificate
+In order to communicate with Google Cloud, a security certificate must be generated and then registered with IoT core.
+
+
+  chmod +x generate_keys.sh
+  ./generate_keys.sh
+View the contents of the security key
+
+
+  cat ../.ssh/ec_public.pem
+Highlight the contents of the key – this will automatically copy the contents.
+
+Keep the VM terminal open. Return to the Cloud Console and go to IoT Core.
+
+Run the simulation script
+Return to the terminal window for your VM. Run the simulation script, but replace the values below with ones that match your project and IoT Core registry settings.
+
+
+  python heartrateSimulator.py --project_id=myproject --registry_id=myregistry --device_id=myVM --private_key_file=../.ssh/ec_private.pem
+  
+You should see the data being sent via MQTT from your VM terminal.
